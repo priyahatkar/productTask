@@ -1,0 +1,14 @@
+.carousel{
+    padding-top: 56px;
+}
+::ng-deep{
+    .owl-item.ng-tns-c19-0.ng-trigger.ng-trigger-autoHeight.active.ng-star-inserted {
+        width: 100vw !important;
+        // height: 100% !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .carousel{
+        padding-top: 90px;
+    }
+}

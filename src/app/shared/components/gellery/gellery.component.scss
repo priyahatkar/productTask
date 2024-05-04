@@ -1,0 +1,52 @@
+.best{
+    font-size: 16px;
+    color:black;
+    opacity: 0.8;
+    font-weight: 300;
+    margin: 0 0 20px 20px;
+}
+.explore{
+    font-size: 36px;
+    color:black;
+    opacity: 0.8;
+    font-weight: 400;
+    margin: 20px 0 0 20px;
+    line-height: 1.5;
+}
+.last-gallery{
+    background-color:   #f7f1f0;
+    height: 525px;
+    align-items: center;
+}
+.text-last-gallery{
+    width: 700px;
+}
+.image-up{
+    margin-left: 315px;
+    position: relative;
+}
+.image-down{
+    margin-left: 50px;
+    margin-top:50px;
+    position: absolute;
+    z-index: 999;
+}
+.shop-now{
+    background-color: #212b36;
+    color: white;
+    font-weight: 300;
+    padding: 10px 25px;
+    margin-left: 20px;
+}
+.shop-now:hover{
+    background-color: #c16452;
+}
+
+@media screen and (max-width:575px){
+    .last-gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+    }
+}

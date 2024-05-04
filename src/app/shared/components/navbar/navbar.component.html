@@ -1,0 +1,182 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top d-block ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#right-nav-toggle"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto left-nav px-0">
+                <a class="nav-link" href="#" (mouseover)="MenActive()">MEN</a>
+                <a class="nav-link" href="#" (mouseover)="WomenActive()">WOMEN</a>
+                <a class="nav-link" href="#" (mouseover)="KidActive()">KIDS</a>
+                <a class="nav-link" href="#" (mouseover)="CollectionActive()">COLLECTIONS</a>
+                <a class="nav-link" href="#">SALE</a>
+                <a class="nav-link" href="#">SCHOOL SHOES</a>
+            </div>
+            <a class="align-self-center navbar-brand" href="">
+                <img src="https://www.campusshoes.com/cdn/shop/files/PNG_LOGO_280x.png?v=1648116444" alt="Company Logo">
+            </a>
+            
+                <!-- Right links -->
+            <div class="navbar-nav ml-auto right-nav py-2  px-0  collapse navbar-collapse " id="right-nav-toggle">
+                <a class="nav-link " href="#">Account</a>
+                <a class="nav-link " href="#">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-link " href="#">Wishlist <i class="fa-regular fa-heart"></i></a>
+                <a class="nav-link " routerLink="addCard">Cart <i class="fa-solid fa-bag-shopping"></i></a>
+                <a class="nav-link " href="#">Stores <i class="fa-solid fa-earth-asia"></i></a>
+                <a class="nav-link " href="#">Track Order <i class="fa-solid fa-truck-fast"></i></a>
+            </div>
+    
+                
+        </div>
+        <!-- Men Dropdown list -->
+    <div class="d-flex justify-content-between drop" *ngIf="MenDropdown" (mouseleave)="MenDropdown = false">
+        <li>
+            <ul>SHOES</ul>
+            <ul>Running Shoes</ul>
+            <ul>walking Shoes</ul>
+            <ul>Casual Shoes</ul>
+            <ul>Sports Shoes</ul>
+            <ul>Sneakers</ul>
+        </li>
+        <li>
+            <ul>SANDALS & FLOATERS</ul>
+            <ul>Casual</ul>
+            <ul>Sports</ul>
+            <ul>Clogs</ul>
+        </li>
+        <li>
+            <ul>SLIPPERS</ul>
+            <ul>Flip Flops</ul>
+            <ul>Slides</ul>
+        </li>
+        <li>
+            <ul>FEATURE COLLECTIONS</ul>
+            <ul>Retro Kids</ul>
+            <ul>Air-Capsule</ul>
+            <ul>Nitrofly</ul>
+            <ul>Nitro Boost</ul>
+            <ul>Ball-Tech</ul>
+            <ul>OGs</ul>
+            <ul>Motomania</ul>
+        </li>
+        <li>
+            <ul>ACCESSORIES</ul>
+            <ul>Socks</ul>
+        </li>
+        <li>
+            <ul>
+                <a class="navbar-brand align-self-center" href="#">
+                    <img src="//www.campusshoes.com/cdn/shop/files/Men_d20cacdc-584d-45c8-9a83-fa3a0d2f748a_2048x.jpg?v=1667386512 2048w"
+                        alt="Company Logo">
+                </a>
+                <div class="d-flex justify-content-center">Men's Shoe</div>
+            </ul>
+        </li>
+    </div>
+
+    <!-- Women Dropdown list -->
+    <div class="d-flex justify-content-between drop" *ngIf="WomenDropdown" (mouseleave)="WomenDropdown = false">
+        <li>
+            <ul>SHOES</ul>
+            <ul>Running Shoes</ul>
+            <ul>walking Shoes</ul>
+            <ul>Casual Shoes</ul>
+            <ul>Sports Shoes</ul>
+            <ul>Sneakers</ul>
+        </li>
+        <li>
+            <ul>SANDALS & FLOATERS</ul>
+            <ul>Casual</ul>
+            <ul>Sports</ul>
+        </li>
+        <li>
+            <ul>SLIPPERS</ul>
+            <ul>Flip Flops</ul>
+            <ul>Slides</ul>
+        </li>
+        <li>
+            <ul>FEATURE COLLECTIONS</ul>
+            <ul>Slip on Shoes</ul>
+            <ul>OGs</ul>
+            <ul>Yoga Flex</ul>
+            <ul>Chunkey Sneakers</ul>
+        </li>
+        <li>
+            <ul>ACCESSORIES</ul>
+            <ul>Socks</ul>
+        </li>
+        <li>
+            <ul>
+                <a class="navbar-brand align-self-center" href="#">
+                    <img src="//www.campusshoes.com/cdn/shop/files/Women_98d08ea4-2231-459b-bbf2-f3eb806655b9_2048x.jpg?v=1667386497 2048w"
+                        alt="Company Logo">
+                </a>
+                <div class="d-flex justify-content-center">Women Shoe</div>
+            </ul>
+        </li>
+    </div>
+    <!-- 'Kids' Dropdown list -->
+    <div class="d-flex justify-content-between drop" *ngIf="KidsDropdown" (mouseleave)="KidsDropdown = false">
+        <li>
+            <ul>SHOES</ul>
+            <ul>Running Shoes</ul>
+            <ul>Slip on Shoes</ul>
+            <ul>Casual Shoes</ul>
+            <ul>Sports Shoes</ul>
+            <ul>Sneakers</ul>
+        </li>
+        <li>
+            <ul>SANDALS & SLIPPERS</ul>
+            <ul>Casual</ul>
+            <ul>Sports</ul>
+            <ul>Flip Flops</ul>
+        </li>
+        <li>
+            <ul>FEATURE COLLECTIONS</ul>
+            <ul>Tom and Jerry</ul>
+            <ul>Justice League</ul>
+            <ul>Ben 10</ul>
+        </li>
+        <li>
+            <ul>SCHOOL SHOES</ul>
+            <ul>Boys</ul>
+            <ul>Girls</ul>
+        </li>
+        <li>
+            <ul>
+                <a class="navbar-brand align-self-center" href="#" >
+                    <img class="img-fluid" src="//www.campusshoes.com/cdn/shop/files/Kids_dfc625a6-b691-4b19-9fe5-c4ac14df500e_2048x.jpg?v=1667386523 2048w"
+                        alt="Company Logo">
+                </a>
+                <div class="d-flex justify-content-center">Kids Shoe</div>
+            </ul>
+        </li>
+    </div>
+    <!-- 'Collection' Dropdown list -->
+    <div class="d-flex  justify-content-start drop collection-dropdown py-3" *ngIf="CollectionDropdown"
+        (mouseleave)="CollectionDropdown = false">
+        <li>
+            RETRO KICKS
+        </li>
+        <li>
+            NITROFLY
+        </li>
+        <li>
+            AIR CAPSULE
+        </li>
+        <li>
+            MOTOMANIA
+        </li>
+        <li>
+            CAMPUS OGs
+        </li>
+        <li>
+            CLOGS
+        </li>
+        <li>
+            IMMERSIVE EXPERIENCE
+        </li>
+    </div>
+</nav>
+

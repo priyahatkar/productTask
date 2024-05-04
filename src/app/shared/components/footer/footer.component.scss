@@ -1,0 +1,103 @@
+.footer-1{
+    display:  flex;
+    align-items: center;
+    // margin: 10px;
+    height: 85px;
+    overflow-x: hidden;
+}
+
+.footer-1 div div{
+    display: block ;
+    width: 340px;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #171717;
+}
+.footer-1 div div i{
+    font-size: 28px;
+}
+
+.footer-2{
+    height: 490px;
+    background-color:  #f4dfdb;
+    
+}
+.footer-2 div li ul:first-child{
+    font-size: 20px;
+    font-weight: 400;
+    color: #171717;
+    opacity: 1;
+}
+.footer-2 div li ul{
+    font-size: 15px;
+    font-weight: 300;
+    color: #171717;
+    opacity: 0.7;
+}
+.bold-texts{
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-bottom: 0;
+}
+.footer-list{
+    padding: 80px 5px;
+    display: flex;
+}
+.sign-up{
+    background-color: #212b36;
+    color: white;
+    font-weight: 300;
+    padding: 10px 25px;
+    opacity: 1 !important;
+}
+
+.sign-up:hover{
+    background-color: #c16452;
+}
+
+.footer-2 div div {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+}
+li ul input{
+    background-color: aliceblue;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 13px 15px;
+    width: 80%;
+}
+.fa-brands{
+    font-size: 24px;
+    margin: 8px;
+}
+.footer-3{
+    height: 188px;
+    background-color: #f4dfdb;
+}
+.footer-3 h2{
+    margin: 0 40px;
+    font-weight: 400;
+}
+.key-searches{
+    margin: 0 40px; 
+}
+.key-searches a{
+ font-weight: 300;
+ text-decoration: none;
+ color: #171717;
+ opacity: 0.7;
+}
+.footer-4 div{
+    border-top: 1px solid #dbd7d6;;
+    padding: 50px 40px;
+    background-color: #f4dfdb;
+}
+.footer-4 a{
+        text-decoration: none;
+        color: #171717;
+        opacity: 0.7;
+        font-size: 13px;
+}

@@ -1,0 +1,81 @@
+<div class="container-fluid d-flex justify-content-around ">
+    <div class="ekart-wishlist-sale-container">
+        <div class="ekart--add--to--wishlist">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+        </div>
+        <div class="ekart-on-sale-tag" *ngIf="productData.discountPrice">
+            {{(100-(productData.discountPrice/productData.price)*100).toFixed(1)+'%OFF '}}</div>
+    </div>
+    <img src="{{productData.imageURL}}" alt="">
+    <div class="product-detail">
+        <div class="ekart-product-detail m-2">
+            <div class="ekart-product-detail-name">
+                <h2>{{productData.name}}</h2>
+            </div>
+            <!-- <div class="ekart-product-detail-gbc">
+                <span   [setBackground]="{backColor:'red',textColor:'white'}" >{{productData.gender}}</span>    
+                <span  [setBackground]="{backColor:'black',textColor:'white'}">{{productData.brand}}</span>
+                <span  [setBackground]="{backColor:'blue',textColor:'white'}">{{productData.category}}</span>
+            </div> -->
+            <div class="ekart-product-detail-price">
+               
+                <div class="ekart--add--to--price nodiscount text-danger" [hidden]="productData.discountPrice">
+                    <div  *ngIf="!productData.discountPrice">Product Price:  {{'$'+productData.price}}</div>
+                   
+                </div>
+               <div class="d-flex justify-content-start  discountprice ">
+                <div class="text-danger" *ngIf="productData.discountPrice">DISCOUNTED PRICE:</div>
+                <div class="mx-2 text-danger" *ngIf="productData.discountPrice">
+                    {{('$'+productData.discountPrice)}}
+                </div>
+                <!-- <br [hidden]="product.discountPrice"> -->
+                <div class="ekart--add--to--striked-price" [hidden]="!productData.discountPrice">
+                    <div  *ngIf="productData.discountPrice">M.R.P :  <s>{{('$'+productData.price)}}</s></div>
+                  
+                </div>
+               </div>
+               <div class="tax-text">Inclusive of all taxes</div>
+            </div>
+            
+            <div class="ekart-product-detail-color">
+                <div class="color-text">
+                    <p>Colors </p>
+                </div>
+               <div class="d-flex">
+                <diV   *ngFor="let item of productData.color">
+                        <div class="color-box">               
+                            <span  class="ekart-product-detail-available-color  "[style.backgroundColor]="item" ></span>
+                        </div>                    
+                </diV>   
+               </div>             
+            </div>
+            <div class="ekart-product-detail-size">
+                <div class="color-text">
+                    <p>Available Size<p>
+                </div>
+               <div class="d-flex">
+                <diV  *ngFor="let item of productData.size"> 
+                    <div class="ekart-product-detail-available-size ">{{item}}</div>
+                    
+                </diV>    
+               </div>   
+               <div class="ekart--product--in--stock"
+        [ngStyle]="{fontweight:'bold',color:productData.is_in_inventory ? 'Green' : 'Red'}">{{productData.is_in_inventory ?
+        'Availble in stock' : 'Not available in stock'}}
+        </div>         
+            </div>
+    
+    
+            <div class="ekart-product-detail-desc">
+                <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                    <h4>Product Description</h4>
+                </div>
+                <div style="margin-top: 20px">
+                    <p>{{productData.description}}</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<app-bestsaler></app-bestsaler>

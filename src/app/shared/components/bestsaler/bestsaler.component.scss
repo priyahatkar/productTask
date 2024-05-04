@@ -1,0 +1,137 @@
+.bestseller-name{
+    display: flex;
+    margin-top: 35px;
+}
+.bestseller-name button i{
+    margin: 0 35px;
+    font-size: 13px ;
+    color: rgb(204, 145, 18);
+}
+.iconBtn{
+    border: 0;
+    background-color: transparent;
+}
+.bestseller-name  span{
+    font-size: 32px;
+}
+div a {
+    font-size: 12px;
+    color: rgb(204, 145, 18);
+    border-bottom: 1px solid rgb(204, 145, 18);
+    text-decoration: none;
+}
+.bestseller-container{
+    height: 550px;
+    overflow-x: scroll;
+    margin-top: 50px ;
+}
+.inner{
+    width: 2200px;
+}
+/*============================== products in container====================== */
+
+
+.ekart--product--item{
+    height: 500px;
+    width: 330px !important;
+    background-color: #FDFEFE;
+    margin: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.ekart-wishlist-sale-container{
+    display: inline-block;
+    width: 70px;
+    position: absolute;
+    padding: 5px 0px;
+    z-index: 1;
+}
+.ekart--add--to--wishlist{
+    padding:2px 10px;
+    text-align: right;
+    font-size: 22px;
+    position: absolute;
+}
+/* Sale tag */
+.ekart-on-sale-tag{
+    float: right;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right:-10px;
+    padding: 5px 10px;
+    background-color: #c20000;
+    color: #efefef;
+    font-weight: bold;
+}
+
+
+.ekart--add--to--price{
+    padding:1px 5px;
+    width: 70px;
+    margin: 5px;
+    background-color:#28282B;
+    color:white;
+}
+
+.ekart--product--image{
+    width: 330px;
+    height: 250px;
+}
+.ekart--product--name{
+    font-size: 14px;
+    color: #28282B;
+    margin-top: 7px;
+}
+.ekart--product--category,
+.ekart--product--in--stock,
+.ekart--product--available-colors{
+    font-size: 12px;
+    color: #999;
+    margin-top: 7px;
+}
+.ekart--add--to--striked-price{
+    text-decoration: line-through;
+    width: 70px;
+    opacity: 0.7;
+    margin: 5px;
+}
+.discountprice{
+    margin-top: -25px;
+}
+.nodiscount{
+    margin: 0px 17px 30px 5px;
+}
+
+/* .ekart--product--item:hover {
+    border: #efefef 2px solid; 
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px; 
+    transition: 0.4s ;
+}  */
+
+.buyButton{
+    margin: 10px 0px;
+    width:100%;
+    padding: 10px;
+    // border: #efefef 2px solid;
+    opacity: 0.8;
+    transition: 1s;
+   /* display: none; */
+} 
+
+
+/* Hide scrollbar for Firefox */
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0   ;
+}
+
+  /* Hide scrollbar for other browsers */
+.inner {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
